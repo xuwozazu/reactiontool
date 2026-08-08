@@ -21,6 +21,9 @@
     <ClInclude Include="FileControlor.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectControler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FileControlor.cpp">
@@ -28,6 +31,9 @@
     </ClCompile>
     <ClCompile Include="..\..\register_types.cpp">
       <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectControler.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

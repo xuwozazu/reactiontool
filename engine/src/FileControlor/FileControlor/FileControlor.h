@@ -9,6 +9,8 @@ namespace FileControlor {
 class FileController : public godot::RefCounted {
 	GDCLASS(FileController, godot::RefCounted);
 
+	godot::String DirectoryPath;
+
 public:
 	FileController();
 	~FileController();
