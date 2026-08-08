@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="FileControlor/FileControlor.vcxproj" Id="9a560c28-6551-4bd9-b4fd-099dfc32324d" />
+</Solution>

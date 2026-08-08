@@ -1,0 +1,10 @@
+[configuration]
+
+entry_symbol = "reaction_library_init"
+compatibility_minimum = "4.2"
+reloadable = true
+
+[libraries]
+
+windows.debug.x86_64 = "res://addons/reaction_ext/reaction_ext.dll"
+windows.release.x86_64 = "res://addons/reaction_ext/reaction_ext.dll"

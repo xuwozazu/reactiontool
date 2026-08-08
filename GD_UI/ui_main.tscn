@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b22127cwhn6ev"]
+
+[ext_resource type="Script" uid="uid://hayumvd3kivh" path="res://GD_UI/StartMainContainer.cs" id="1_dv3gw"]
+[ext_resource type="Script" uid="uid://5ljh3fhg3567" path="res://GD_UI/projectManager/ProjectManager.cs" id="2_454lq"]
+
+[node name="UIStart" type="Control" unique_id=1230004334]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1935188021]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05490196, 0.05882353, 0.07058824, 1)
+
+[node name="startMainContainer" type="HSplitContainer" parent="ColorRect" unique_id=203124141]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dv3gw")
+
+[node name="leftRect" type="ColorRect" parent="ColorRect/startMainContainer" unique_id=1914216836]
+layout_mode = 2
+color = Color(0.08235294, 0.09019608, 0.10980392, 1)
+
+[node name="leftContainer" type="VBoxContainer" parent="ColorRect/startMainContainer/leftRect" unique_id=168785251]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="projectManagerContainer" type="ScrollContainer" parent="ColorRect/startMainContainer/leftRect/leftContainer" unique_id=1548668358]
+layout_mode = 2
+
+[node name="projectManager" type="VBoxContainer" parent="ColorRect/startMainContainer/leftRect/leftContainer/projectManagerContainer" unique_id=899066676]
+layout_mode = 2
+script = ExtResource("2_454lq")
+
+[node name="rightRect" type="ColorRect" parent="ColorRect/startMainContainer" unique_id=1577986451]
+layout_mode = 2
+color = Color(0.08235294, 0.09019608, 0.10980392, 1)
